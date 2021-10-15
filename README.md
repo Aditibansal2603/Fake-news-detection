@@ -1,28 +1,61 @@
-# Is This Fake News? Using machine learning to identify fake news articles
+# Detection of Fake News Article : Project Overview🎯
+## Problem Statement
+In recent years, misinformation and disinformation campaigns have become increasingly prevalent around the world.<br>
 
-### Live Demo: [www.isthisfakenews.ai](http://www.isthisfakenews.ai) (*NOTE*: this is currently running on a free Heroku instance, so it may take a minute to boot up / for the page to load)
+Disinformation campaigns are a new form of asymmetrical information warfare, in which a coordinated effort is made to manipulate public manipulations.<br>
+According to the U.S. Department of State, "the top one percent of fake news stories typically reached between 1,000 and 100,000 people, whereas true stories rarely exceeded an audience of one thousand."
 
-<p float="left">
-  <img src="https://github.com/malwaredllc/is-this-fake-news/blob/main/static/images/real-prediction.png?raw=true.png" width="400" />
-  <img src="https://github.com/malwaredllc/is-this-fake-news/blob/main/static/images/fake-prediction.png?raw=true" width="400" />
-</p>
+## Natural Language Processing and Machine Learning problem
+Predict whether an article is fake news or not on the input parameters like title, author and text.<br>
+<b>Type</b> : Supervised Learning<br>
+<b>Task</b> : Binary classification<br>
+<b>Performance metric</b>  Accuracy<br>
 
-### How it works:
+## About Dataset
+Source : https://www.kaggle.com/c/fake-news/data
 
-[Read the paper here!](https://github.com/malwaredllc/is-this-fake-news/blob/main/Research_Paper.pdf)
+### Attribute Information
+<b>id</b>: unique id for a news article<br>
+<b>title</b>: the title of a news article<br>
+<b>author</b>: author of the news article<br>
+<b>text</b>: the text of the article; could be incomplete<br>
+<b>label</b>: a label that marks the article as potentially unreliable<br>
+- 1: unreliable
+- 0: reliable
 
-## Research Notebooks
+## Tools and Technologies used🛠
+- Windows 10 OS 
+- Python 3.9.0
+- Pandas
+- Numpy
+- Malplotlib 
+- Seaborn 
+- Sklearn
+- Nltk
+- Torch
+- Transformers
+- Flask
+- HTML
+- CSS
+- BootStrap 
+- Deployed on Heroku cloud
 
-The research notebooks (`/research-notebooks`) were developed on Kaggle, using the [Fake and real news dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset/code). The 2 approaches explored in the research notebooks are:
 
-- Multi-layer Perceptron
-- BERT Fine-tuning
+## Methodology
+![Methodology](snapshots/Methodology.png)
 
-## Running the web app locally
 
-- Install Python 3.7+
-- Install the required packages with the command: `python3 -m pip install -r requirements.txt`
-- Launch the web app with the command `python3 -m flask run`
-- Navigate to `http://127.0.0.1:5000` in your browser
-- Enjoy :)
+## Result
+**A web application to detect whether the article is fake or real news based on factors like author, title, etc.**
+- Live app :- https://fakenewspredict-aditi101803650.herokuapp.com/
+- The model was trained and validated on 44k+ articles
+- Achieved Accuracy of 0.986 and F1 score of 0.985 
 
+![Landing Page](snapshots/Landing_Page.PNG)
+
+
+## Novelty
+- Explored two different approaches:
+1. Multi-layer Perceptron
+2. BERT Fine-tuning
+- For both models, performed optimization
