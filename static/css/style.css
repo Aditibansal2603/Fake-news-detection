@@ -2,7 +2,7 @@
 body{
 	font:15px/1.5 Arial, Helvetica,sans-serif;
 	padding: 0;
-	background-color: #e9e9e9cf;
+	background-color: #D8BFD8;
 }
 
 .container{
@@ -14,7 +14,7 @@ body{
 }
 
 header{
-	background: #03a9f4;
+	background: #800080;
 	border-bottom: #000000 3px solid;
 	height:120px;
 	width:100%;
